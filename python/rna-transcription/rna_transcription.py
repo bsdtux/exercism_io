@@ -8,7 +8,4 @@ def to_rna(dna_strand: str) -> str:
     :returns: RNA complement
     :rtype: str
     """
-    if not dna_strand:
-        return ''
-
     return dna_strand.translate(str.maketrans('CGTA', 'GCAU'))
